@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+ <script>
+   (function(){
+    var redirect = sessionStorage.redirect;
+    delete sessionStorage.redirect;
+    if (redirect && redirect != location.href) {
+      history.replaceState(null, null, redirect);
+    }
+   })();
+ </script>
+  <meta charset="utf-8">
+  <title>FirebaseCrud</title>
+  <base href="/firebase-crud/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link href="styles.c13c420b98702b8a0aa2.bundle.css" rel="stylesheet"/></head>
+<body>
+  <app-root>Loading...</app-root>
+<script type="text/javascript" src="inline.9c9006ac1ada6eaa037d.bundle.js"></script><script type="text/javascript" src="main.fe5436e8e92c4d11c9f6.bundle.js"></script></body>
+</html>
